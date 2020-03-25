@@ -13,18 +13,15 @@ After those are installed you can open up terminal
 
 cd into your favorite directory where you like to store your projects and run the following:
 
-    git clone git@github.com:joscraw/vehicle-history.git
+    git clone git@github.com:joscraw/vehicle-history-test.git
     
-    copy .env.dist to .env or (.env.local for local env file) and modify any params specific to your local machine.
-    You may need to modify the LOCAL_USER depending on your OS. Run id -u && id -g to determine your user id and group id.
-
     docker-compose build 
     
     docker-compose up -d
     
-    (to stop containers: docker-compose stop)
-    
     docker-compose exec php composer install 
     
     docker-compose exec php php bin/console doctrine:schema:create
+    
+    (to stop containers if needed: docker-compose stop)
     
