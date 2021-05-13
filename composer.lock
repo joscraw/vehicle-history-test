@@ -1163,6 +1163,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-21T11:34:59+00:00"
         },
         {
@@ -1602,12 +1603,12 @@
             "version": "v2.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/whiteoctober/Pagerfanta.git",
+                "url": "https://github.com/BabDev/Pagerfanta.git",
                 "reference": "a53ff01d521648d9dbca19b93ac6bc75a59b0972"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/a53ff01d521648d9dbca19b93ac6bc75a59b0972",
+                "url": "https://api.github.com/repos/BabDev/Pagerfanta/zipball/a53ff01d521648d9dbca19b93ac6bc75a59b0972",
                 "reference": "a53ff01d521648d9dbca19b93ac6bc75a59b0972",
                 "shasum": ""
             },
@@ -1663,6 +1664,12 @@
                 "pagination",
                 "paginator",
                 "paging"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/mbabker",
+                    "type": "github"
+                }
             ],
             "time": "2019-07-17T20:56:16+00:00"
         },
@@ -2911,20 +2918,20 @@
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v1.1.7",
+            "version": "v1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
-                "reference": "c43ab685673fb6c8d84220c77897b1d6cdbe1d18"
+                "reference": "84e23fdcd2517bf37aecbd16967e83f0caee25a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/c43ab685673fb6c8d84220c77897b1d6cdbe1d18",
-                "reference": "c43ab685673fb6c8d84220c77897b1d6cdbe1d18",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/84e23fdcd2517bf37aecbd16967e83f0caee25a7",
+                "reference": "84e23fdcd2517bf37aecbd16967e83f0caee25a7",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=7.1.3"
             },
             "suggest": {
                 "psr/event-dispatcher": "",
@@ -2934,6 +2941,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -2965,7 +2976,21 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-09-17T09:54:03+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-06T13:19:58+00:00"
         },
         {
             "name": "symfony/expression-language",
@@ -4952,20 +4977,20 @@
         },
         {
             "name": "symfony/security-core",
-            "version": "v4.4.5",
+            "version": "v4.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "6251c8e432640106e6f2f045ac3b365f1af36d44"
+                "reference": "8188709909f1e980bd5d791aa9d85156204526e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/6251c8e432640106e6f2f045ac3b365f1af36d44",
-                "reference": "6251c8e432640106e6f2f045ac3b365f1af36d44",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/8188709909f1e980bd5d791aa9d85156204526e9",
+                "reference": "8188709909f1e980bd5d791aa9d85156204526e9",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": ">=7.1.3",
                 "symfony/event-dispatcher-contracts": "^1.1|^2",
                 "symfony/service-contracts": "^1.1.6|^2"
             },
@@ -4975,12 +5000,13 @@
                 "symfony/security-guard": "<4.3"
             },
             "require-dev": {
-                "psr/container": "^1.0",
+                "psr/container": "^1.0|^2.0",
                 "psr/log": "~1.0",
                 "symfony/event-dispatcher": "^4.3",
                 "symfony/expression-language": "^3.4|^4.0|^5.0",
                 "symfony/http-foundation": "^3.4|^4.0|^5.0",
                 "symfony/ldap": "^4.4|^5.0",
+                "symfony/translation": "^4.4|^5.0",
                 "symfony/validator": "^3.4.31|^4.3.4|^5.0"
             },
             "suggest": {
@@ -4992,11 +5018,6 @@
                 "symfony/validator": "For using the user password constraint"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Security\\Core\\": ""
@@ -5021,7 +5042,21 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "https://symfony.com",
-            "time": "2020-02-24T13:10:00+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-05-12T12:42:28+00:00"
         },
         {
             "name": "symfony/security-csrf",
@@ -5358,20 +5393,20 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v1.1.8",
+            "version": "v1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "ffc7f5692092df31515df2a5ecf3b7302b3ddacf"
+                "reference": "b776d18b303a39f56c63747bcb977ad4b27aca26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
-                "reference": "ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/b776d18b303a39f56c63747bcb977ad4b27aca26",
+                "reference": "b776d18b303a39f56c63747bcb977ad4b27aca26",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": ">=7.1.3",
                 "psr/container": "^1.0"
             },
             "suggest": {
@@ -5381,6 +5416,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -5412,7 +5451,21 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-10-14T12:27:06+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-06T13:19:58+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -6366,12 +6419,12 @@
             "version": "1.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "aed98a490f9a8f78468232db345ab9cf606cf598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/aed98a490f9a8f78468232db345ab9cf606cf598",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/aed98a490f9a8f78468232db345ab9cf606cf598",
                 "reference": "aed98a490f9a8f78468232db345ab9cf606cf598",
                 "shasum": ""
             },
@@ -6414,12 +6467,12 @@
             "version": "v1.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/whiteoctober/WhiteOctoberPagerfantaBundle.git",
+                "url": "https://github.com/sampart/WhiteOctoberPagerfantaBundle.git",
                 "reference": "6df560869b5e09a3acf920890ab40598998b30ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/6df560869b5e09a3acf920890ab40598998b30ae",
+                "url": "https://api.github.com/repos/sampart/WhiteOctoberPagerfantaBundle/zipball/6df560869b5e09a3acf920890ab40598998b30ae",
                 "reference": "6df560869b5e09a3acf920890ab40598998b30ae",
                 "shasum": ""
             },
@@ -6468,6 +6521,7 @@
                 "page",
                 "paging"
             ],
+            "abandoned": "babdev/pagerfanta-bundle",
             "time": "2019-12-02T14:19:37+00:00"
         },
         {
@@ -6695,6 +6749,7 @@
                 "monolog",
                 "productivity"
             ],
+            "abandoned": true,
             "time": "2019-10-24T07:13:31+00:00"
         },
         {
